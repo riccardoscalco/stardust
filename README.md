@@ -55,7 +55,7 @@ Admin User
 
 Set username and password in the file `../server/admin.coffee`.
 
-To login, type on the browser console:
+To login/logout, type on the browser console:
 ```
 $ Meteor.loginWithPassword('admin','password')
 $ Meteor.logout()
