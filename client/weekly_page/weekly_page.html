@@ -1,0 +1,13 @@
+<template name="weekPage">
+  <div class="container-fluid">
+    {{> header}}
+    {{> arrows}}
+    {{#each posts}}
+      {{> postItem}}
+    {{/each}}
+    {{#if loading}}
+      {{> loadingPage}}
+    {{/if}}  
+    {{> bottomLinks}}
+  </div>
+</template>

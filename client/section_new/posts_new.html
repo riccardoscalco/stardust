@@ -1,0 +1,20 @@
+<template name="postsNew">
+  <div class="container-fluid">
+    {{> header}}
+    {{> arrows}}
+    <div id="noMoreNewLinks" class="collapse">
+      <div class="row-fluid">
+        <div class="span8 offset2 pagination-centered box box-alert">
+          <div class="alert">
+            <button id="closeButton1" type="button" class="close error-alert">&times;</button>
+            <span>Sorry, there are no more new links. Please try later :)</span><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{#each posts}}
+      {{> postItem}}
+    {{/each}}
+    {{> bottomLinks}}
+  </div>
+</template>

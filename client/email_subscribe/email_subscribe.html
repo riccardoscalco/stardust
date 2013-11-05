@@ -1,0 +1,18 @@
+<template name="emailSubscribe">
+  <div class="emailfield">
+    <input id="emailInput" type="text" name="email" placeholder="Your Email">
+    <button id="subscribeButton" type="button">Subscribe</button>
+  </div>
+  <div id="subscribedMessage" class="collapse">
+    <div class="row-fluid">
+      <div class="span8 offset2 pagination-centered box box-alert">
+        <div class="alert">
+          <button id="closeButton" type="button" class="close error-alert">&times;</button>
+          <span>Thanks for signing up!</span><br>
+          <span>Confirmation email sent.</span>
+          <!--<span>You will receive a confirmation email.</span>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

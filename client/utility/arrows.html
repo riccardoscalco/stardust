@@ -1,0 +1,53 @@
+<template name="arrows">
+  <div class="row-fluid arrows">
+    <div class="span8 offset2 box">
+      {{#if onPostsNewPage}}
+        <div class="row-fluid">
+          <div class="span3 pagination-left">
+            <a class="labell" href="{{latestWeekPagePath}}">
+              <i class="icon-chevron-left"></i>
+              <span>last week</span>
+            </a>
+          </div>
+          <div class="span6 pagination-centered">
+            <span class="date">New links</span>
+          </div>
+          <div class="span3 pagination-right">
+            <a class="labelr getMorePosts" href="">
+              <span>Load more</span>
+              <i class="icon-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+      {{/if}}
+      {{#if onWeekPage}}
+        <div class="row-fluid">
+          <div class="span3 pagination-left">
+            {{#if notFirstWeek}}
+              <a class="labell" href="{{weekPagePath previousWeek}}">
+                <i class="icon-chevron-left"></i>
+                <span>Previous</span>
+              </a>
+            {{/if}}
+          </div>
+          <div class="span6 pagination-centered">
+            <span class="date">{{dateWeek}}</span>
+          </div>
+          <div class="span3 pagination-right">
+            {{#if notLatestWeek}}
+              <a class="labelr" href="{{weekPagePath nextWeek}}">
+                <span>Next</span>
+                <i class="icon-chevron-right"></i>              
+              </a>
+            {{else}}
+              <a class="labelr" href="{{postsNewPath}}">
+                <span>New</span>
+                <i class="icon-chevron-right"></i>              
+              </a>
+            {{/if}}
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</template>

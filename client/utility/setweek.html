@@ -1,0 +1,21 @@
+<template name="setWeek">
+  <form class="main  weeknumberbox">
+    <div class="control-group">
+      <div class="controls">
+        <input name="week" type="text" value="" placeholder="{{weekNumber}}"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <input name="dateweek" type="text" value="" placeholder="date interval"/>
+      </div>
+    </div>    
+    <div class="control-group">
+        <div class="controls">
+          <button type="submit" value="Submit">Set</button>
+        </div>
+    </div>
+    <span>On week {{week}}</span><br>
+    <span>{{dateweek}}</span>
+  </form>
+</template>

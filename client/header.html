@@ -1,0 +1,15 @@
+<template name="header">
+  <header class="row-fluid">
+    <div class="span8 offset2 pagination-centered headerbox box">
+      <div class="row-fluid">
+        <div class="span10 offset1 pagination-centered headerbox box">
+          <a href="{{latestWeekPagePath}}">
+            <img src="/drawing.svg" class="img-rounded mylogo">
+          </a>
+          <h1>Stardust is a weekly linkblog powered by Meteor</h1>
+          {{> emailSubscribe}}
+        </div>
+      </div>
+    </div>
+  </header>
+</template>

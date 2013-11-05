@@ -1,0 +1,10 @@
+<template name="postsWeekly">
+  <div class="row-fluid">
+    <div class="span8 offset2 pagination-centered box">
+      {{> setWeek}}
+    </div>
+  </div>
+  {{#each posts}}
+    {{> postItem}}
+  {{/each}}
+</template>
