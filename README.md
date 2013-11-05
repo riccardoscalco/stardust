@@ -13,7 +13,7 @@ Create a meteor project and download Stardust:
 ```
 $ meteor create stardust
 $ cd stardust
-$ git clone ...
+$ git clone git://github.com/riccardoscalco/stardust.git ./
 ```
 
 Install packages:
