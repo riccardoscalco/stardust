@@ -11,9 +11,13 @@ Quick Start
 Create a meteor project and download Stardust:
 
 ```
+$ mkdir project
+$ cd project
+$ git clone git://github.com/riccardoscalco/stardust.git .
 $ meteor create stardust
-$ cd stardust
-$ git clone git://github.com/riccardoscalco/stardust.git ./
+$ mv * stardust
+$ cd stardus
+$ rm stardust.*
 ```
 
 Install packages:
