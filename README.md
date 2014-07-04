@@ -1,6 +1,5 @@
-> Stardust is a linkblog template powered by [Meteor][1]. It is the
-> engine at the base of [Seofon][2], a collaborative linkblog on Data
-> Visualization.
+> Stardust is a linkblog template powered by [Meteor][1]. You have the
+> opportunity to suggest links and to upvote links suggested by others.
 > See a demo at [stardust.meteor.com][3].
 >
 > *Please enjoy*.
